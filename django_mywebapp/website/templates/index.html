@@ -1,1 +1,10 @@
-<h1>hellow</h1>
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>ホーム</h1>
+{% load static %}
+<img src="{% static 'balloons-1786430.jpg' %}">
+<img src="{% static 'beach-1852945.jpg' %}">
+<img src="{% static 'below-19038.jpg' %}">
+<img src="{% static 'chicago-1791002.jpg' %}">
+{% endblock%}
