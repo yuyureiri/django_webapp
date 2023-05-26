@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 <body>
+
     {% include "_navbar.html" %}
+    
+    <form action="#" class="search-form-005">
+        <label>
+            <input type="text" placeholder="キーワードを入力">
+        </label>
+        <button type="submit" aria-label="検索"></button>
+    </form>
     
     {% block main %}コンテンツがありません{% endblock%}
 
